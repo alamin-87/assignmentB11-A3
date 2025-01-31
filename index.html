@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AssignmentB11-A3</title>
+    <!-- ------------------------------- css link------------------------------- -->
+     <link rel="stylesheet" href="style/style.css">
+        <!-- ---------------------font awesome----------------- -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- ----------------------------------------sora font----------------------- -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- -------------------------------tailwind css link------------------------ -->
+    <script src="tailwind_config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily: {
+            'sora': ["Sora", 'serif'],
+           },
+            container: {
+            padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+            },
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          },
+        }
+      }
+    </script>
+
+
 </head>
 <body>
-    
+     <header>
+        <section class="bg-[#FFF9F4]">
+            <div class="container">
+                <nav class="navbar flex justify-between items-center py-[27px]">
+                    <div class="logo flex items-center gap-[12px]">
+                        <img src="images/logo-header.png" alt="logo">
+                        <p class=" hidden lg:block text-[26px] text-black font-sora font-[400]">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
+                    </div>
+                    <div class="nav_content hidden lg:block">
+                        <ul class="flex items-center gap-[32px] text-[20px] text-[#111111] font-sora font-[400]">
+                            <li><a href="#">Find a pet</a></li>
+                            <li><a href="#">Breeds</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_button lg:flex items-center gap-[12px] hidden lg:block">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#" class=" flex justify-center items-center bg-[#FFDC26] w-[117px] h-[45px] rounded-[8px] text-[20px] text-[#111111] font-sora font-[400] hover:border-[2px]
+                        hover:border-solid hover:border-[#FFDC26] hover:bg-transparent transition-[.4s]">Login</a>
+                        <a href="#" class=" flex justify-center items-center bg-[#FFDC26] w-[146px] h-[45px] rounded-[8px] text-[20px] text-[#111111] font-sora font-[400] hover:border-[2px]
+                        hover:border-solid hover:border-[#FFDC26] hover:bg-transparent transition-[.4s]">Register</a>
+                    </div>
+                    <div class="res_icon lg:hidden text-[30px]">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <span class="block lg:hidden border-b-[2px] border-[#111111] border-solid"></span>
+        </section>
+        <div class="hero"></div>
+     </header>
+     <main></main>
+     <footer></footer>
 </body>
 </html>
