@@ -12,6 +12,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- -------------------------adlam font--------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
     <!-- -------------------------------tailwind css link------------------------ -->
     <script src="tailwind_config.js"></script>
@@ -21,6 +25,7 @@
         theme: {
             fontFamily: {
             'sora': ["Sora", 'serif'],
+            'adlam': ["ADLaM Display", 'serif'],
            },
             container: {
             padding: {
@@ -73,7 +78,22 @@
             </div>
             <span class="block lg:hidden border-b-[2px] border-[#111111] border-solid"></span>
         </section>
-        <div class="hero"></div>
+        <div class="hero">
+          <div class="container">
+            <div class="hero_row pt-[32px] lg:pt-[100px]">
+              <div class="hero_row_text absolute">
+                <h2 class=" w-[358px] lg:w-[681px] text-[30px] lg:text-[56px] text-[#111111] font-adlam font-[400]">Pamper Your Pet, Because They Deserve the Bes</h2>
+                <p class=" w-[350px] lg:w-[672px] text-[16px] lg:text-[20px] text-[#000000] font-sora font-[400] my-[12px] lg:mt-[16px] lg:mb-[24px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. 
+                Shop now and make tails wag with joy!</p>
+                <a href="#" class="px-[30px] py-[10px] bg-[#FFDC26] rounded-[8px] text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400] hover:border-[2px] hover:border-solid hover:border-[#FFDC26]
+                hover:bg-transparent transition-[.4s]">Find a pet</a>
+              </div>
+              <div class="hero_row_img mt-[200px] lg:mt-0">
+                <img src="images/cat-big.png" alt="cat">
+              </div>
+            </div>
+          </div>
+        </div>
      </header>
      <main></main>
      <footer></footer>
