@@ -81,7 +81,7 @@
         <div class="hero">
           <div class="container">
             <div class="hero_row pt-[32px] lg:pt-[100px]">
-              <div class="hero_row_text absolute">
+              <div class="hero_row_text absolute z-99">
                 <h2 class=" w-[358px] lg:w-[681px] text-[30px] lg:text-[56px] text-[#111111] font-adlam font-[400]">Pamper Your Pet, Because They Deserve the Bes</h2>
                 <p class=" w-[350px] lg:w-[672px] text-[16px] lg:text-[20px] text-[#000000] font-sora font-[400] my-[12px] lg:mt-[16px] lg:mb-[24px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. 
                 Shop now and make tails wag with joy!</p>
@@ -89,7 +89,7 @@
                 hover:bg-transparent transition-[.4s]">Find a pet</a>
               </div>
               <div class="hero_row_img mt-[200px] lg:mt-0">
-                <img src="images/cat-big.png" alt="cat">
+                <img src="images/cat-big.png" alt="cat" class="hero_img">
               </div>
             </div>
           </div>
@@ -253,29 +253,77 @@
         </section>
         <section class="price">
           <div class="container">
-            <div class="price_row">
+            <div class="price_row mt-[55px] mb-[326px] lg:mt-[141px] lg:mb-[405px] relative">
               <div class="price_row_text">
-                <h2>Everyday low Price</h2>
+                <h2 class="text-[24px] lg:text-[36px] text-[#111111] font-adlam font-[400]">Everyday low Price</h2>
               </div>
-              <div class="price_row_cards flex flex-wrap justify-center items-center">
-                <div class="price_row_card1 w-[357px] h-[335px] lg:w-[784px] lg:h-[480px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:rounded-[12px] ">
-                  <p>Under Price</p>
-                  <h3>Pet Grooming Mitt</h3>
-                  <span>(Easy Hair Removal)</span>
-                  <p>$7.99</p>
-                  <img src="images/cute-dog-mid.png" alt="dog">
+              <div class="price_row_cards flex flex-wrap justify-center items-center mt-[32px] lg:mt-[47px] gap-[23px]">
+                <div class="price_row_card1 w-[357px] h-[335px] lg:w-[784px] lg:h-[480px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]
+                rounded-[10px] lg:rounded-[12px] relative pt-[38px] pl-[34px] lg:pt-[137px] lg:pl-[88px] ">
+                  <p class="hidden lg:block text-[20px] text-[#000000] font-sora font-[400]">Under Price</p>
+                  <h3 class="text-[22px] lg:text-[32px] text-[#000000] font-adlam font-[400]">Pet Grooming Mitt</h3>
+                  <span class=" hidden lg:block text-[24px] text-[#ffffff] font-adlam font-[400]">(Easy Hair Removal)</span>
+                  <p class="text-[40px] lg:text-[56px] text-white lg:text-[#000000] font-adlam font-[400]">$7.99</p>
+                  <img src="images/cute-dog-mid.png" alt="dog" class="absolute w-[214px] h-[268px] lg:w-[390px] lg:h-[500px] top-[70px] right-[10px] lg:top-[0px] lg:right-[20px]">
                 </div>
-                <div class="price_row_card2 w-[357px] h-[334px] lg:w-[512px] lg:h-[480px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-[10px] lg:rounded-[12px]">
-                  <h2>T-Shirt for Dogs</h2>
-                  <p>$7.99</p>
-                  <img src="images/cute-pet-mid.png" alt="pet">
+                <div class="price_row_card2 w-[357px] h-[334px] lg:w-[512px] lg:h-[480px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-[10px] lg:rounded-[12px] relative
+                 pt-[38px] pl-[34px] lg:pt-[55px] lg:pl-[50px]">
+                  <h2 class="text-[22px] lg:text-[32px] text-[#000000] font-adlam font-[400]">T-Shirt for Dogs</h2>
+                  <p class="text-[40px] lg:text-[56px] text-[#FFDC26] font-adlam font-[400]">$7.99</p>
+                  <img src="images/cute-pet-mid.png" alt="pet" class="absolute w-[214px] h-[268px] lg:w-[312px] lg:h-[392px] top-[70px] right-[10px] lg:top-[100px] lg:right-[10px]">
                 </div>
+              </div>
+              <div class="price_absolute_row w-full h-[523px] lg:h-[491px] bg-[#FFF9F4] flex flex-wrap justify-center items-center rounded-[8px] lg:rounded-[16px] lg:gap-[117px]
+                absolute top-[810px] lg:top-[700px]">
+                  <div class="price_absolute_row_img">
+                    <img src="images/cute-pet-mid.png" alt="pet" class="w-[190px] h-[238px] lg:w-[330px] lg:h-[415px]">
+                  </div>
+                  <div class="price_absolute_row_text flex flex-col">
+                    <h2 class="text-[22px] lg:text-[36px] text-[#111111] font-adlam font-[400]">Get awesome News!</h2>
+                    <p class=" w-[300px] lg:w-full text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400] text-center mt-[12px] mb-[20px] lg:mt-[20px] lg:mb-[38px]">
+                     Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="text" placeholder="Enter email...." class=" w-[312px] h-[42px] lg:w-[472px] lg:h-[67px] rounded-[6px] lg:rounded-[8px] pl-[8px] lg:pl-[18px] mb-[12px] lg:mb-[38px]">
+                    <a href="#" class=" w-[121px] h-[34px] lg:w-[164px] lg:h-[45px] bg-[#FFDC26] rounded-[8px] flex justify-center items-center text-[14px] lg:text-[20px] text-[#111111] font-sora font-[400]">
+                      Subscribe</a>
+                  </div>
               </div>
             </div>
           </div>
         </section>
       </div>
      </main>
-     <footer></footer>
+     <footer class="bg-[#FFEC89]">
+      <div class="container">
+         <div class="footer_row pt-[365px] pb-[56px] lg:pt-[366px] lg:pb-[141px] grid lg:grid-cols-3 ">
+          <div class="footer_col1">
+            <div class="col1_logo flex items-center gap-[8px] lg:gap-[12px]">
+              <img src="images/logo-footer.png" alt="logo">
+              <p class="text-[20px] lg:text-[26px] text-[#111111] font-sora font-[400]">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
+            </div>
+            <div class="col1_text">
+              <p class=" lg:w-[426px] text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400] opacity-[70%] mt-[16px] lg:mt-[30px]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+          </div>
+          <div class="footer_col2 mt-[36px] lg:mt-0 lg:ml-[158px]">
+            <ul class="flex flex-col gap-[20px] lg:gap-[32px]">
+              <li><a href="#" class="text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400]">Find a pet</a></li>
+              <li><a href="#" class="text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400]">Breeds</a></li>
+              <li><a href="#" class="text-[16px] lg:text-[20px] text-[#111111] font-sora font-[400]">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer_col3 mt-[36px] lg:mt-[80px] lg:ml-[298px]">
+            <div class="col3_text">
+              <p class="text-[14px] lg:text-[16px] text-[#111111] font-sora font-[500]">Follow Us</p>
+            </div>
+            <div class="col3_icon flex flex-row gap-[30px] mt-[20px]">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+         </div>
+      </div>
+     </footer>
 </body>
 </html>
